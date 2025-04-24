@@ -1,0 +1,27 @@
+Very important question that highlights the “limping pointer strategy" or "lagging update" — that’s where we try to balance the seesaw on one side and see if it’s aligned (and then we can return the pivot). If it's not balanced, we add more weight to the left and check again to see if the sum of the weights is similar.
+
+It’s important to notice that we used - right_sum = total_sum - left_sum - num
+
+Because of this logic: Total = left + pivot + right ⇒ right = total - left - pivot ✅
+
+If you do +num instead of -num, you're incorrectly adding the pivot to the right side — but the pivot doesn’t belong to either side.
+
+IT REALLY ACTS LIKE A SEESAW!
+ We add to the left side (it goes up), we compute the new right side (it goes down), and then we check with the if statement in the middle each time.
+IF WE COULDN’T BALANCE, WE RETURN -1
+
+---
+
+🕒 Time Complexity: O(n)
+We iterate over the array once to compute total_sum → O(n)
+
+Then we loop again once to find the pivot → O(n)
+
+✅ Total: O(n)
+
+💾 Space Complexity: O(1)
+We use just a few variables: total_sum, left_sum, and num
+
+No additional data structures are used
+
+✅ Space: O(1)

@@ -1,0 +1,13 @@
+Problem: Best Time to Buy and Sell Stock
+Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+
+Explanation:
+We keep track of the minimum price. When a higher price appears (a jump), we calculate the potential profit.
+If it’s greater than the current max profit, we update it.
+
+Key Notes:
+- Always try to track the minimum as you go
+- Calculate max_profit only on a price 'bump'
+
+Time Complexity: O(n)
+Space Complexity: O(1)

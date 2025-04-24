@@ -1,0 +1,13 @@
+Problem: Two Sum
+Link: https://leetcode.com/problems/two-sum
+
+Explanation:
+To solve this question, we take the complement (target - num) and check if it exists in the hashmap.
+If it does, we return the indices. If not, we add the current number to the hashmap and continue.
+
+Key Notes:
+- Use enumerate or range(len(nums)); num = nums[i] in loop
+- enumerate produces (index, value) pairs
+
+Time Complexity: O(n) — one pass through the list
+Space Complexity: O(n) — worst case, all elements are added to the hashmap

@@ -15,14 +15,13 @@ leetcode-devops-dsa-prep/
 ├── core/            # Fundamental problems (arrays, hashmap, stack, queue)
 ├── variations/      # Smart twists & pattern extensions
 ├── notes/           # Interview notes, DevOps + GPT thoughts
-├── solved.md        # Progress tracker
 └── README.md        # You are here.
 
 ---
 
 ## Core Problems Checklist
 
-- Two Sum — Array + HashMap
+- Two Sum — Array + HashMap 
 - Best Time to Buy and Sell Stock — Sliding Window
 - Move Zeroes — Array
 - Product of Array Except Self — Prefix Product
@@ -56,7 +55,7 @@ leetcode-devops-dsa-prep/
 
 ## Why DevOps Needs DSA
 
-Even as a DevOps or infrastructure engineer, you’ll be expected to:
+Even as a DevOps or infrastructure engineer, I'll need to:
 - Understand systems & performance trade-offs
 - Debug logic under pressure
 - Automate smartly (with code, not copy-paste)

@@ -1,0 +1,14 @@
+Problem: Move Zeroes
+Link: https://leetcode.com/problems/move-zeroes
+
+Explanation:
+Use a pointer `_pos` to track where the next non-zero value should go.
+For every non-zero, place it at `_pos` and increment `_pos`.
+After that, fill the rest of the list with zeroes starting from `_pos`.
+
+Key Notes:
+- We only move `_pos` when encountering non-zero
+- Use range(pause, len(nums)) to fill in remaining zeroes
+
+Time Complexity: O(n)
+Space Complexity: O(1)
