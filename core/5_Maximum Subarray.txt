@@ -1,0 +1,15 @@
+First, we define current_sum and max_sum as the first number in the list (nums[0]).
+
+Next, we run a loop starting from the second number in the list: nums[1:].
+
+Our goal is to extend the current subarray as far as possible by adding the current number to the running total (current_sum + num), as long as it's still better than just starting over from the current number.
+
+If, at any point, current_sum + num becomes less than just num, we reset the current subarray — meaning we start a new sum from this number.
+
+At the end of each iteration, we update max_sum by comparing it to the latest current_sum. If we've found a better sum, we store it.
+
+---
+
+Time Complexity: O(n)
+
+Space Complexity: O(1)
